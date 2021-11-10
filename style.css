@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,11 +20,11 @@ body {
   background-image: linear-gradient(hsl(10,90,66), transparent 70%);
   background-size: 100% 100%;
   mix-blend-mode: difference;
-  }
+  } */
 
-/* body {
+body {
 text-align: center;
-} */
+}
 
 .card-body {
   background: #696969;
