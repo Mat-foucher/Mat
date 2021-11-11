@@ -21,6 +21,9 @@ h3 {
   color: darkorange;
 }
 
+#parent { white-space: nowrap; }
+.child { display: inline-block; }
+
 .card {
 
   background: rgb(51,63,80);
