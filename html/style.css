@@ -25,8 +25,7 @@ h3 {
 .child { display: inline-block; }
 
 .w3-container-o {
-  background-color: rgb(255,140,0);
-  
+  background: rgb(255,140,0);
   text-align: left;
   margin-left: 15px;
 }
