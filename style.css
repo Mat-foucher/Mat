@@ -24,6 +24,11 @@ h3 {
 #parent { white-space: nowrap; }
 .child { display: inline-block; }
 
+.w3-container-o {
+  background-color: rgb(255,140,0);
+  color: rgb(0,0,0);
+}
+
 .card {
 
   background: rgb(51,63,80);
