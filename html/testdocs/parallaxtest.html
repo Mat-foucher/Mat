@@ -1,0 +1,33 @@
+<script>
+    document.getElementById("body").onscroll = function myFunction() {
+    var scrolltotop = document.scrollingElement.scrollTop;
+    var target = document.getElementById("main1");
+    var xvalue = "center";
+    var factor = 0.5;
+    var yvalue = scrolltotop * factor;
+    target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+  }
+</script>
+
+<style>
+    .main1 {
+        background-image: url('/img/IMG_0618_COPY.jpg');
+        background-position: top center;
+        background-attachment: scroll;
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+    }
+    .placeholdersoyoucanscroll {
+        height: 100vh;
+    }
+</style>
+
+<body>
+    <main>
+        <div id="main1">   
+        </div>
+        <div id="placeholdersoyoucanscroll">
+        </div>
+    </main>
+</body>
