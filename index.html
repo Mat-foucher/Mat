@@ -5,14 +5,7 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-  document.getElementById("body").onscroll = function myFunction() {
-    var scrolltotop = document.scrollingElement.scrollTop;
-    var target = document.getElementById("body");
-    var xvalue = "center";
-    var factor = 0.5;
-    var yvalue = scrolltotop * factor;
-    target.style.backgroundPosition = xvalue + " " + yvalue + "px";
-  }
+
 </script>
 
 
@@ -25,14 +18,10 @@
     body {
       background-color: rgb(51,63,80);
       background-image: url('img/IMG_0618_COPY.jpg');
-      /* background-repeat: no-repeat;
+      background-repeat: no-repeat;
       background-size: cover;
-      background-attachment: fixed; */
-      background-position: top center;
-      background-attachment: scroll;
-      background-size: cover;
-      height: 80vh;
-      width: 100%;
+      background-attachment: fixed;
+      
     }
   
   </style>
