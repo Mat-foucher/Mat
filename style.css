@@ -152,6 +152,7 @@ svg {
     color:white;
     background:none;
     font-family: 'titlefont';
+    text-align: center;
 }
 #group2 .parallax_layer--back {
     color: black;
