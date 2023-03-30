@@ -149,8 +149,9 @@ svg {
     z-index:3;
 }
 #group2 .parallax_layer--base {
-    color:black;
+    color:white;
     background:none;
+    font-family: 'titlefont';
 }
 #group2 .parallax_layer--back {
     color: black;
