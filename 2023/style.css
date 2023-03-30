@@ -1,0 +1,172 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    position: absolute;
+    /* Set left; 50% if desire is to have text in center of parallax groups */
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@font-face {
+    font-family: 'titlefont';
+    src: url('ErvaEsraDemoSemibold-Rpwle.ttf');
+}
+
+header {
+    background-color: antiquewhite;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+header * {
+    display: inline;
+}
+header li {
+    margin: 20px;
+}
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Spinning Picture */
+
+svg {
+    position: fixed;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll)* -1s);
+}
+
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+/* Fade In On Scroll */
+
+.fade-in-section { 
+    opacity: 0;
+    transform: trnaslateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+/* Parallax */
+
+
+.parallax {
+    font-size: 200%;
+}
+
+.parallax {
+    height: 500px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.parallax_group {
+    position: relative;
+    height: 500px;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.parallax_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.parallax_layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 5;
+}
+
+.parallax_layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+    vertical-align: middle;
+    line-height: 90px;
+}
+
+.parallax_layer--back { 
+    -webkit-transform: translate(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+}
+
+.parallax_layer--deep { 
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+}
+
+/* Parallax Groups */
+
+#group1 {
+    z-index:5;
+}
+#group1 .parallax_layer--base {
+    color:black;
+    background-color: antiquewhite;
+    font-family: 'titlefont';
+    font-size: 200%;
+}
+
+
+#group2 {
+    z-index:3;
+}
+#group2 .parallax_layer--base {
+    color:black;
+    background:none;
+}
+#group2 .parallax_layer--back {
+    color: black;
+    
+}
+
+#group3 {
+    z-index:4;
+}
+#group3 .parallax_layer--fore {
+    color:black;
+    background:none;
+    text-align:center;
+    font-family: 'titlefont';
+}
+#group3 .parallax_layer--base {
+    color: black;
+    background: antiquewhite;
+}
