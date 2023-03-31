@@ -58,10 +58,12 @@ header li a {
     font-family: 'titlefont';
     height: 700px;
     overflow: scroll;
+    padding-bottom: 100px;
 }
 
 #overflowSection img {
     width: 300px;
+
 }
 /* Spinning Picture */
 
