@@ -60,6 +60,9 @@ header li a {
     overflow: scroll;
 }
 
+#overflowSection img {
+    size: 50%;
+}
 /* Spinning Picture */
 
 svg {
