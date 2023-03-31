@@ -208,3 +208,23 @@ svg {
     color: black;
     background: antiquewhite;
 }
+
+#group4 {
+    z-index:3;
+}
+#group4 .parallax__layer--fore {
+    color:white;
+    background:none;
+    text-align:center;
+    font-family: 'titlefont';
+}
+#group4 .parallax_layer--base {
+    color:white;
+    background:none;
+    font-family: 'titlefont';
+    text-align: center;
+}
+#group4 .parallax_layer--back {
+    color: black;
+    
+}
