@@ -53,6 +53,7 @@ header li a {
 }
 
 #overflowSection {
+    background: none;
     color: white;
     font-family: 'titlefont';
     width: 50%;
