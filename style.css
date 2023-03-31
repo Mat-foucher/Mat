@@ -57,6 +57,8 @@ header li a {
     color: white;
     font-family: 'titlefont';
     height: 700px;
+    width: 70%;
+    padding-left: 15%;
     overflow: scroll;
 }
 
