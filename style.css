@@ -24,6 +24,7 @@ body {
 }
 
 .subtitle {
+    color: white;
     text-align: center;
     position: absolute;
     font-size: 50%;
