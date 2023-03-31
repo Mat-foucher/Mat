@@ -45,7 +45,7 @@ header {
     position: fixed;
     left: 0;
     right: 0;
-    height: 15%;
+    height: 8%;
     display: flex; 
     justify-content: space-between;
     flex-direction: row;
