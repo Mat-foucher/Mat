@@ -52,6 +52,14 @@ header li a {
     
 }
 
+#overflowSection {
+    color: white;
+    font-family: 'titlefont';
+    width: 50%;
+    height: 80%;
+    overflow: scroll;
+}
+
 /* Spinning Picture */
 
 svg {
