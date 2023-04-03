@@ -176,6 +176,16 @@ svg {
     font-family: 'titlefont';
     font-size: 200%;
 }
+#group1 h1 {
+    color: white;
+    font-family:'titlefont';
+    text-align: center;
+}
+#group1 h2 {
+    color: blue;
+    font-family:'titlefont';
+    text-align: center;
+}
 
 
 #group2 {
