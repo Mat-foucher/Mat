@@ -82,6 +82,12 @@ header li a {
 #overflowSection figure {
     padding-bottom: 50px;
 }
+
+.wrapper {
+    padding-top: 15%;
+}
+
+
 /* Spinning Picture */
 
 svg {
