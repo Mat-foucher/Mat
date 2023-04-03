@@ -213,7 +213,7 @@ svg {
 #group4 {
     z-index:3;
 }
-#group4 .parallax__layer--fore {
+#group4 .parallax_layer--fore {
     color:white;
     background:none;
     text-align:center;
@@ -232,4 +232,5 @@ svg {
 #group4 h1 {
     color: white;
     font-family:'titlefont';
+    text-align: center;
 }
