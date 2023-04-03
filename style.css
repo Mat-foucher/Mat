@@ -177,12 +177,13 @@ svg {
     font-size: 200%;
 }
 #group1 h1 {
-    color: white;
+    color: black;
     font-family:'titlefont';
     text-align: center;
 }
 #group1 h2 {
     color: blue;
+    font-size:large;
     font-family:'titlefont';
     text-align: center;
 }
