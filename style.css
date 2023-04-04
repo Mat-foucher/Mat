@@ -251,3 +251,9 @@ svg {
     font-family:'titlefont';
     text-align: center;
 }
+#group4 h2 {
+    color: white;
+    font-family:'titlefont';
+    text-align: center;
+    padding-top: 15%;;
+}
