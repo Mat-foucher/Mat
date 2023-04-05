@@ -282,11 +282,11 @@ svg {
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-.container h2:hover {
-    box-shadow: inset 100px 0 0 0 white;
-    color: black;
-}
+    }
+    .container h2:hover {
+        box-shadow: inset 100% 0 0 0 white;
+        color: black;
+    }
 
 
 /* MOBILE FORMATTING */
