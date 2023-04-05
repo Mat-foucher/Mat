@@ -12,6 +12,12 @@ body {
     background-color: antiquewhite;
     overflow: hidden;
 }
+body h1{
+    font-family: 'titlefont';
+}
+body h2 {
+    font-family: 'titlefont';
+}
 
 .title {
     text-align: center;
