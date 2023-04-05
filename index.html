@@ -83,8 +83,25 @@
                 -webkit-transition: -webkit-transform 0.5s;
                 transition: transform 0.5s;
             }
+
+            /* FADE IN */
+            .fade-in {
+			    opacity: 0;
+			    transition: opacity 1s ease-in-out;
+            }
+
+            .fade-in.visible {
+                opacity: 1;
+            }
+
+            /* Style for the container element */
+            .container {
+                height: 100%;
+                background-color: none;
+            }
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
         
     </head>
 
@@ -208,18 +225,20 @@
 
                 <div id="group4" class="parallax__group">
                     <div class="parallax_layer parallax_layer--fore">
-                        <h1> Skills </h1>
-                        <h2> Front End Web Development Frameworks </h2>
-                        <h2> Website Design and Development </h2>
-                        <h2> Responsive Web / App Design </h2>
-                        <h2> App Design / Development </h2>
-                        <h2> HTTP Protocols </h2>
-                        <h2> Writing and advertising </h2>
-                        <h2> File Transfer Protocol </h2>
-                        <h2> Visual Art and Design </h2>
-                        <h2> Microsoft Suite (Word, Excel, etc.)</h2>
-                        <h2> Adobe Suite + More</h2>
-                        
+                        <div class="container">
+                            <h1> Skills </h1>
+                            <h2> Front End Web Development Frameworks </h2>
+                            <h2> Website Design and Development </h2>
+                            <h2> Responsive Web / App Design </h2>
+                            <h2> App Design / Development </h2>
+                            <h2> HTTP Protocols </h2>
+                            <h2> Writing and advertising </h2>
+                            <h2> File Transfer Protocol </h2>
+                            <h2> Visual Art and Design </h2>
+                            <h2> Microsoft Suite (Word, Excel, etc.)</h2>
+                            <h2> Adobe Suite + More</h2>
+                        </div>
+                            
                     </div>
                 </div>
             </div>
@@ -277,6 +296,21 @@
             ga('send', 'pageview');
         </script>
         <script async="" src="//www.google-analytics.com/analytics.js"></script>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                // Get the position of the element
+                var elementPos = document.querySelector('.fade-in').getBoundingClientRect().top;
+                
+                // Get the height of the viewport
+                var windowHeight = window.innerHeight;
+    
+                // Check if the element is in the viewport
+                if (elementPos < windowHeight) {
+                    document.querySelector('.fade-in').classList.add('visible');
+                }
+            });
+        </script>
     </body>
 
 
