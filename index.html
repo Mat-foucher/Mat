@@ -88,7 +88,25 @@
         
     </head>
 
+    <script type="text/javascript">
+        // MOBILE REDIRECT:
+        if(screen.width <= 699) {
+          document.location = "https://mfoucher.dev/mobile.html";
+        }
 
+        // SCROLL TO FUNCTION:
+        function scrollTo(hash) {
+            location.hash = '#' + hash;
+        }
+        function scrollFunction1(idstring) {
+                let e = document.getElementById(idstring);
+                e.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+                inline: 'start'
+                });
+        }
+    </script>
 
     <header>
         <h1 style="font-weight: normal; font-size: x-large; padding-left:3%;"> Mathieu Foucher </h1>
@@ -99,7 +117,7 @@
                     <a href="https://docs.google.com/document/d/1lcojj0RJOrJS40i_FRpMvHESgVGCMwyFFPJA2ZYT2po/edit?usp=sharing">RESUME</a>
                 </li>
                 <li>
-                    <a>CONTACT</a>
+                    <a onclick="scrollFunction1('group3')">CONTACT</a>
                 </li>
             </ul>
         </nav>
